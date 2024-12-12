@@ -1,0 +1,12 @@
+.column {
+    text-align: center;
+    width: 40%;
+    line-height: 2rem;
+    background-color: white;
+    border: 3px solid black;
+    box-shadow: inset 2px 2px 2px 2px rgb(0 0 0 / 15%), inset 0px -2px 2px 2px rgb(0 0 0 / 15%);
+}
+
+#poem {
+    min-height: 500px;
+}

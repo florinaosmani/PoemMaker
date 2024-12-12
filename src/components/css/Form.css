@@ -1,0 +1,24 @@
+/* form styling */
+
+form {
+    margin: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 192px; /* Nothing else will work? */
+    text-align: center;
+}
+
+.buttonContainer {
+    width: 100%;
+    display: flex;
+}
+
+#newContainer {
+    justify-content: space-evenly;
+}
+
+#lengthContainer {
+    justify-content: space-around;
+}

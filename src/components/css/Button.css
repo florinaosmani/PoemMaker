@@ -1,0 +1,18 @@
+button {
+    border-radius: 4px;
+    line-height: 1.1rem;
+    box-shadow: inset 2px 2px rgb(0 0 0 / 15%);
+}
+
+.length {
+    width: 5rem;
+}
+
+.new {
+    width: 6.5rem;
+}
+
+.active {
+    background-color: rgb(215, 215, 215);
+    font-weight: bold;
+}

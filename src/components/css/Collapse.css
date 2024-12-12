@@ -1,0 +1,34 @@
+details {
+    width: 40%;
+    border: 3px solid black;
+    border-radius: 6px;
+    background-color: rgb(229, 229, 229);
+}
+
+details[open] {
+    background-color: rgb(255, 255, 255);
+    box-shadow: inset 2px -2px 2px 2px rgb(0 0 0 / 15%);
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    box-shadow: inset 1px 1px 2px 2px rgb(0 0 0 / 20%);
+}
+
+summary::after {
+    content: "+";
+}
+
+details[open] summary::after {
+    content: "-";
+}
+
+details[open] summary {
+    border-bottom: 3px solid black;
+    background-color: rgb(229, 229, 229);
+}
+

@@ -1,0 +1,40 @@
+/* Universal */
+#root {
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
+    box-sizing: border-box;
+}   
+
+html {
+    background-color: lightgray; 
+}
+
+/* Column Container */
+
+#columnContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5rem;
+}
+
+.padding {
+    padding: 0.7rem;
+}
+
+/* author card */
+
+.authorCard {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    border-bottom: 1px solid black;
+    box-shadow: 0px -1px 2px 2px rgb(0 0 0 / 15%) inset;
+}
+
+/* Drag elements */
+span {
+    border: 1px solid black;
+    padding: 0.2rem;
+}

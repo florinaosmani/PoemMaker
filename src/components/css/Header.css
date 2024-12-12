@@ -1,0 +1,16 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem 4rem 5rem 4rem;
+}
+
+/* styling children */
+
+ul {
+    margin: 0.5rem;
+}
+
+ul {
+    padding-left: 1rem;
+    list-style-type: disc;
+}
