@@ -118,6 +118,19 @@ function App() {
     setPoem([]);
   };
 
+  const handleOnDropRemove = (event) => {
+    const index = event.dataTransfer.getData('indexText');
+
+    if(poem.some(arr => arr[3] === index)) {
+      const elementsIndex = poem.findIndex(arr => arr[3] === index);
+      setPoem(prev => {
+        const updatedArr = [...prev];
+        updatedArr.splice(elementsIndex, 1);
+        return updatedArr;
+      });
+    }
+  }
+
   return (
     <div id='app'>
       <Header 
@@ -134,7 +147,7 @@ function App() {
             </div>
             <div 
               className='bookText padding'>
-                {section.split(/([\s\-_—,.;"()!?“:”]+)/).map((item, i)=> <span 
+                {section.split(/([\s\-_—,.;:"()!?“”']+)/).map((item, i)=> <span 
                                                               draggable='true' 
                                                               key={`book_${i}`}
                                                               className={i}
@@ -143,6 +156,14 @@ function App() {
                                                             </span>)}
             </div>
           </Column>
+          <div
+              id='removeText'
+              onDrop={handleOnDropRemove}
+              onDragOver={handleDragOver}
+              onDragEnter={handleDragEnter}
+              >
+                <p>Remove Text here!</p>
+            </div>
           <Column id='poem'>
             <div
               className='poemtext'

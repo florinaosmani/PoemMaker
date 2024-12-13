@@ -8,10 +8,10 @@ function setLength (len) {
             textLength = 500;
             break;
         case 'medium' :
-            textLength = 1000;
+            textLength = 700;
             break;
         case 'long':
-            textLength = 1500;
+            textLength = 900;
             break;
         }
     return textLength;

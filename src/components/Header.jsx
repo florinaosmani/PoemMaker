@@ -33,6 +33,7 @@ export default function Header ({ onTextLengthChange, onClickNewSection, onClick
                         <li>Click 'New Book' or 'New Section' if you're not happy with the current text selection</li>
                         <li>Set the text length from short to long</li>
                         <li>Click and drag into the right field</li>
+                        <li>Enjoy writing your poem!</li>
                     </ul>
             </Collapse>
         </header>
