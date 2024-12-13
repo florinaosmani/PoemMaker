@@ -2,7 +2,7 @@ import React from 'react';
 import Button from './Button';
 import './css/Form.css';
 
-export default function Form ({ onTextLengthChange, onClickNewSection, onClickNewBook, textLength }) {
+export default function Form ({ onTextLengthChange, onClickNewSection, onClickNewBook, textLength, onClickReset }) {
     return (
         <form>
             <div 
@@ -35,6 +35,15 @@ export default function Form ({ onTextLengthChange, onClickNewSection, onClickNe
                         className={textLength === "long" ? "length active" : "length"}
                         buttonText={'Long'}
                         val={'long'}/>
+            </div>
+            <div
+                className='buttonContainer'
+                id='resetContainer'>
+                    <Button
+                        className='reset'
+                        buttonText={'Reset'}
+                        val={'reset'}
+                        onClickReset={onClickReset} />
             </div>
         </form>
     );

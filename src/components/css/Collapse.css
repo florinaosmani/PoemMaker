@@ -3,6 +3,7 @@ details {
     border: 3px solid black;
     border-radius: 6px;
     background-color: rgb(229, 229, 229);
+    min-height: fit-content;
 }
 
 details[open] {
@@ -16,7 +17,7 @@ summary {
     font-size: 2rem;
     padding: 0.5rem;
     cursor: pointer;
-    box-shadow: inset 1px 1px 2px 2px rgb(0 0 0 / 20%);
+    box-shadow: inset 1px 1px 2px 2px rgba(56, 3, 3, 0.2);
 }
 
 summary::after {

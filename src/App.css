@@ -24,6 +24,16 @@ html {
     padding: 0.7rem;
 }
 
+/* poem column*/
+#poem {
+padding: 0.7rem;
+}
+
+.poemtext {
+height: 500px;
+position: relative;
+}
+
 /* author card */
 
 .authorCard {
@@ -34,7 +44,7 @@ html {
 }
 
 /* Drag elements */
-span {
-    border: 1px solid black;
+.poemtext > span {
+    border: 2px solid black;
     padding: 0.2rem;
 }

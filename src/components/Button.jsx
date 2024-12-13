@@ -1,7 +1,7 @@
 import React from 'react';
 import './css/Button.css';
 
-export default function Button ({ buttonText, className, val, onTextLengthChange, onClickNewSection, onClickNewBook }) {
+export default function Button ({ buttonText, className, val, onTextLengthChange, onClickNewSection, onClickNewBook, onClickReset }) {
     const handleClick = (event) => {
         event.preventDefault();
         if (event.target.className === 'length') {
@@ -10,6 +10,8 @@ export default function Button ({ buttonText, className, val, onTextLengthChange
             onClickNewSection();
         } else if  (event.target.className === 'newBook new') {
             onClickNewBook();
+        } else if (event.target.className === 'reset') {
+            onClickReset();
         }
     };
 

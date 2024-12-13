@@ -33,10 +33,10 @@ function editBook (book, len, prevIndex) {
         startIndex = prevIndex;
     }
     
-    /*making sure the end is 10000 characters away from the actual end of the book
+    /*making sure the end is 5000 characters away from the actual end of the book
     just to be safe in case there's books with indexes or stuff at the end */
-    if((startIndex + textLength) > (book.length - 10000)) {
-        startIndex =- 10000;
+    if((startIndex + textLength) > (book.length - 5000)) {
+        startIndex =- 5000;
     }
 
     let subBook = book.substring(startIndex, (startIndex + textLength));

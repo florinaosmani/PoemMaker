@@ -4,7 +4,7 @@ import Collapse from './Collapse';
 import Form from './Form';
 
 
-export default function Header ({ onTextLengthChange, onClickNewSection, onClickNewBook, textLength }) {
+export default function Header ({ onTextLengthChange, onClickNewSection, onClickNewBook, textLength, onClickReset }) {
     const [isOpen, setIsOpen] = useState(true);
 
     const handleClick = (event) => {
@@ -22,6 +22,7 @@ export default function Header ({ onTextLengthChange, onClickNewSection, onClick
                         onTextLengthChange={onTextLengthChange}
                         onClickNewSection={onClickNewSection}
                         onClickNewBook={onClickNewBook}
+                        onClickReset={onClickReset}
                         textLength={textLength}/>
             </Collapse>
             <Collapse 
@@ -29,10 +30,9 @@ export default function Header ({ onTextLengthChange, onClickNewSection, onClick
                 isOpen={isOpen}
                 onClick={handleClick}>
                     <ul id='instructions'>
-                        <li>Add a topic within the settings to find a book matching your vibe</li>
-                        <li>Click new book or new section if you're not happy with the current text selection</li>
+                        <li>Click 'New Book' or 'New Section' if you're not happy with the current text selection</li>
                         <li>Set the text length from short to long</li>
-                        <li>Select text and drag into the right field</li>
+                        <li>Click and drag into the right field</li>
                     </ul>
             </Collapse>
         </header>
